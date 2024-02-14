@@ -13,6 +13,9 @@ import { IoShareSocial } from "react-icons/io5";
 import web from "../public/web.jpg"
 import profile from "../public/profile.png" ;
 import { FaInstagram } from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa";
+import { SiWhatsapp } from "react-icons/si";
+
 
 function App() {
 
@@ -186,7 +189,7 @@ function App() {
 
  
 
-    <section className="bg-gray-800">
+    <section className="bg-gray-800  pb-8">
     <div className="mx-auto container grid grid-cols-1 lg:grid-cols-4  gap-4 ">
 
   
@@ -231,6 +234,19 @@ function App() {
     </div>
 
     </section>
+
+    <footer className="bg-gray-800 pb-6">
+      <div className="flex flex-col container items-center mx-auto lg:flex-row lg:justify-around">
+      <img src={Logo} className="w-48"/>
+
+      <div className="flex flex-row text-white gap-x-3">
+        <FaFacebook className="text-3xl"/>
+        <FaInstagram  className="text-3xl"/>
+        <SiWhatsapp  className="text-3xl"/>
+      </div>
+      </div>
+      
+    </footer>
     </main>
 
   )
